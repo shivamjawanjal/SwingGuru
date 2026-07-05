@@ -33,16 +33,22 @@ jobs:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: |
-          # Runs daily checks, exits, buys and sends Telegram notifications
+          # 1. Fetch latest daily bar from yfinance and enforce 250-day cap
+          python run_yfinance_update.py
+          
+          # 2. Recalculate indicators on the rolling 250-day data
+          python run_phase2.py
+          
+          # 3. Update exits, execute queued entries, scan and send Telegram alerts
           python run_paper_trading.py --update
 
       - name: Commit and Push Portfolio State Changes
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add data/paper_trading/state.json data/paper_trading/equity_history.csv
+          git add data/paper_trading/state.json data/paper_trading/equity_history.csv data/ohlcv/*.csv
           if ! git diff --cached --quiet; then
-            git commit -m "Auto-update portfolio state [skip ci]"
+            git commit -m "Auto-update portfolio state and rolling prices [skip ci]"
             git push
           else
             echo "No state changes to commit."

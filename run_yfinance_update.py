@@ -37,7 +37,24 @@ def main():
     symbols = validated_df["symbol"].tolist()
     logger.info("Found %d validated symbols to update.", len(symbols))
 
-    # 2. Batch download last 5 days of daily data from yfinance
+    # 2. Configure requests session with custom headers & retries to bypass cloud rate-limiting
+    import requests
+    from urllib3.util import Retry
+    from requests.adapters import HTTPAdapter
+    import time
+
+    session = requests.Session()
+    session.headers.update({
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36'
+    })
+    retries = Retry(
+        total=5,
+        backoff_factor=1.5,
+        status_forcelist=[429, 500, 502, 503, 504],
+        raise_on_status=False
+    )
+    session.mount('https://', HTTPAdapter(max_retries=retries))
+
     tickers = [f"{s}.NS" for s in symbols]
     logger.info("Downloading batch data from Yahoo Finance...")
     try:
@@ -46,7 +63,8 @@ def main():
             period="5d",
             group_by="ticker",
             progress=False,
-            auto_adjust=True
+            auto_adjust=True,
+            session=session
         )
     except Exception as exc:
         logger.error("Failed to download batch price data from Yahoo Finance: %s", exc)
@@ -55,23 +73,59 @@ def main():
     # 3. Process each symbol
     updated_count = 0
     skipped_count = 0
+    failed_symbols = []
 
+    # Identify any symbols that failed or were empty in the batch
+    for symbol in symbols:
+        ticker = f"{symbol}.NS"
+        
+        has_data = False
+        if ticker in batch_data.columns.levels[0]:
+            ticker_df = batch_data[ticker].dropna(subset=["Close"])
+            if not ticker_df.empty:
+                has_data = True
+                
+        if not has_data:
+            failed_symbols.append(symbol)
+
+    if failed_symbols:
+        logger.info("Attempting to retry %d missing symbols individually...", len(failed_symbols))
+        for idx, symbol in enumerate(failed_symbols):
+            ticker = f"{symbol}.NS"
+            try:
+                time.sleep(1.0) # Rate limit cooling period
+                logger.info("[%d/%d] Retrying %s...", idx + 1, len(failed_symbols), ticker)
+                single_data = yf.download(
+                    tickers=[ticker],
+                    period="5d",
+                    progress=False,
+                    auto_adjust=True,
+                    session=session
+                )
+                if not single_data.empty:
+                    # Inject single data back into batch_data
+                    single_data.columns = pd.MultiIndex.from_product([[ticker], single_data.columns])
+                    if batch_data.empty:
+                        batch_data = single_data
+                    else:
+                        batch_data = pd.concat([batch_data, single_data], axis=1)
+            except Exception as exc:
+                logger.warning("Retry download failed for %s: %s", ticker, exc)
+
+    # 4. Save and trim each symbol to rolling window
     for symbol in symbols:
         ticker = f"{symbol}.NS"
         csv_path = config.OHLCV_DIR / f"{symbol}.csv"
 
         if not csv_path.exists():
-            logger.warning("CSV file for %s does not exist under data/ohlcv/, skipping.", symbol)
             continue
 
-        # Load existing CSV
         existing_df = pd.read_csv(csv_path)
         existing_df["date"] = pd.to_datetime(existing_df["date"]).dt.strftime("%Y-%m-%d")
         last_date_str = existing_df.sort_values("date").iloc[-1]["date"]
 
-        # Extract ticker data from batch
         if ticker not in batch_data.columns.levels[0]:
-            logger.warning("Ticker %s not found in batch download, skipping.", ticker)
+            skipped_count += 1
             continue
 
         ticker_df = batch_data[ticker].dropna(subset=["Close"]).copy()

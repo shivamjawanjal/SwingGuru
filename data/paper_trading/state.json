@@ -1,0 +1,203 @@
+{
+  "cash": 1000000.0,
+  "open_positions": {},
+  "pending_entries": [
+    {
+      "symbol": "GVT&D",
+      "signal_date": "2026-07-03",
+      "probability": 0.7664726300638482,
+      "atr_pct": 6.04191092521969,
+      "cap_bucket": "NIFTY200"
+    },
+    {
+      "symbol": "ZEEL",
+      "signal_date": "2026-07-03",
+      "probability": 0.7613026816160051,
+      "atr_pct": 5.431266209334588,
+      "cap_bucket": "NIFTYSMALLCAP250"
+    },
+    {
+      "symbol": "OLAELEC",
+      "signal_date": "2026-07-03",
+      "probability": 0.758596866739573,
+      "atr_pct": 5.285259696948406,
+      "cap_bucket": "NIFTYSMALLCAP250"
+    },
+    {
+      "symbol": "IFCI",
+      "signal_date": "2026-07-03",
+      "probability": 0.7575860131180661,
+      "atr_pct": 5.814305124892567,
+      "cap_bucket": "NIFTYSMALLCAP250"
+    },
+    {
+      "symbol": "TEJASNET",
+      "signal_date": "2026-07-03",
+      "probability": 0.7430051527542871,
+      "atr_pct": 4.64330170300709,
+      "cap_bucket": "NIFTYSMALLCAP250"
+    },
+    {
+      "symbol": "FINCABLES",
+      "signal_date": "2026-07-03",
+      "probability": 0.7338218089630678,
+      "atr_pct": 4.591391414085996,
+      "cap_bucket": "NIFTYSMALLCAP250"
+    },
+    {
+      "symbol": "KIRLOSENG",
+      "signal_date": "2026-07-03",
+      "probability": 0.7291997059557661,
+      "atr_pct": 5.4065188829140505,
+      "cap_bucket": "NIFTYSMALLCAP250"
+    },
+    {
+      "symbol": "NETWEB",
+      "signal_date": "2026-07-03",
+      "probability": 0.7268892794787178,
+      "atr_pct": 5.294454447589474,
+      "cap_bucket": "NIFTYSMALLCAP250"
+    },
+    {
+      "symbol": "APARINDS",
+      "signal_date": "2026-07-03",
+      "probability": 0.7254156577093537,
+      "atr_pct": 5.461964498901254,
+      "cap_bucket": "NIFTYMIDCAP150"
+    },
+    {
+      "symbol": "OLECTRA",
+      "signal_date": "2026-07-03",
+      "probability": 0.719587841996266,
+      "atr_pct": 4.209214142798072,
+      "cap_bucket": "NIFTYSMALLCAP250"
+    },
+    {
+      "symbol": "RPOWER",
+      "signal_date": "2026-07-03",
+      "probability": 0.7118854478244505,
+      "atr_pct": 5.101266496809003,
+      "cap_bucket": "NIFTYSMALLCAP250"
+    },
+    {
+      "symbol": "CARTRADE",
+      "signal_date": "2026-07-03",
+      "probability": 0.7114114470747953,
+      "atr_pct": 4.673913067911572,
+      "cap_bucket": "NIFTYSMALLCAP250"
+    },
+    {
+      "symbol": "AEGISVOPAK",
+      "signal_date": "2026-07-03",
+      "probability": 0.7109599538647766,
+      "atr_pct": 4.156488283521172,
+      "cap_bucket": "NIFTYSMALLCAP250"
+    },
+    {
+      "symbol": "POWERINDIA",
+      "signal_date": "2026-07-03",
+      "probability": 0.7081113791039553,
+      "atr_pct": 5.007793721817089,
+      "cap_bucket": "NIFTY200"
+    },
+    {
+      "symbol": "NIACL",
+      "signal_date": "2026-07-03",
+      "probability": 0.7064831651109535,
+      "atr_pct": 5.130512724905125,
+      "cap_bucket": "NIFTYMIDCAP150"
+    },
+    {
+      "symbol": "TARIL",
+      "signal_date": "2026-07-03",
+      "probability": 0.6997747047344068,
+      "atr_pct": 4.618766026993501,
+      "cap_bucket": "NIFTYSMALLCAP250"
+    },
+    {
+      "symbol": "ENRIN",
+      "signal_date": "2026-07-03",
+      "probability": 0.6996073322574999,
+      "atr_pct": 4.803735762667113,
+      "cap_bucket": "NIFTY100"
+    },
+    {
+      "symbol": "DATAPATTNS",
+      "signal_date": "2026-07-03",
+      "probability": 0.6927625076995619,
+      "atr_pct": 4.620798241016097,
+      "cap_bucket": "NIFTYSMALLCAP250"
+    },
+    {
+      "symbol": "ZENTEC",
+      "signal_date": "2026-07-03",
+      "probability": 0.691921907160584,
+      "atr_pct": 4.459589524034575,
+      "cap_bucket": "NIFTYSMALLCAP250"
+    },
+    {
+      "symbol": "ZENSARTECH",
+      "signal_date": "2026-07-03",
+      "probability": 0.6907855095890659,
+      "atr_pct": 4.157061645983294,
+      "cap_bucket": "NIFTYSMALLCAP250"
+    },
+    {
+      "symbol": "SONATSOFTW",
+      "signal_date": "2026-07-03",
+      "probability": 0.6084001404007747,
+      "atr_pct": 4.919663846220942,
+      "cap_bucket": "NIFTYSMALLCAP250"
+    },
+    {
+      "symbol": "LATENTVIEW",
+      "signal_date": "2026-07-03",
+      "probability": 0.5992957781237269,
+      "atr_pct": 4.398537173970151,
+      "cap_bucket": "NIFTYSMALLCAP250"
+    },
+    {
+      "symbol": "KPITTECH",
+      "signal_date": "2026-07-03",
+      "probability": 0.5979386494250741,
+      "atr_pct": 5.584192880352459,
+      "cap_bucket": "NIFTY200"
+    },
+    {
+      "symbol": "MMTC",
+      "signal_date": "2026-07-03",
+      "probability": 0.5958959396176394,
+      "atr_pct": 4.489883966681775,
+      "cap_bucket": "NIFTYSMALLCAP250"
+    },
+    {
+      "symbol": "GALLANTT",
+      "signal_date": "2026-07-03",
+      "probability": 0.5955941712416158,
+      "atr_pct": 4.111437249718029,
+      "cap_bucket": "UNKNOWN"
+    },
+    {
+      "symbol": "BSOFT",
+      "signal_date": "2026-07-03",
+      "probability": 0.590406601121163,
+      "atr_pct": 4.100392663627485,
+      "cap_bucket": "NIFTYSMALLCAP250"
+    },
+    {
+      "symbol": "ENGINERSIN",
+      "signal_date": "2026-07-03",
+      "probability": 0.5881253832692106,
+      "atr_pct": 4.012015987813187,
+      "cap_bucket": "NIFTYSMALLCAP250"
+    },
+    {
+      "symbol": "COFORGE",
+      "signal_date": "2026-07-03",
+      "probability": 0.5846464855939407,
+      "atr_pct": 3.8115189605731463,
+      "cap_bucket": "NIFTY200"
+    }
+  ],
+  "closed_trades": []
+}

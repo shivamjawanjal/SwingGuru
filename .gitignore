@@ -1,0 +1,30 @@
+# Virtual environment
+env/
+venv/
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Local data directories (heavy historical CSVs and Parquets)
+data/raw/
+data/ohlcv/
+data/features/
+data/labels/
+data/datasets/
+data/validated_symbols.csv
+
+# Temporary states
+data/paper_trading/*.tmp
+data/paper_trading/*.bak
+
+# Backtests and local reports
+backtests/
+logs/
+reports/scans/
+reports/shap/
+reports/regime_history.csv
+*.log
+
+# Scratch directories
+scratch/

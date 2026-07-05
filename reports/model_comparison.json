@@ -1,0 +1,88 @@
+{
+  "primary_metric": "roc_auc",
+  "best_model": "random_forest",
+  "split_info": {
+    "train_date_range": [
+      "2024-01-31",
+      "2025-10-07"
+    ],
+    "val_date_range": [
+      "2025-10-07",
+      "2026-02-16"
+    ],
+    "test_date_range": [
+      "2026-02-16",
+      "2026-07-02"
+    ],
+    "train_rows": 183051,
+    "val_rows": 42505,
+    "test_rows": 39516
+  },
+  "results": {
+    "logistic_regression": {
+      "roc_auc": 0.569,
+      "average_precision": 0.2131,
+      "precision_at_0.5": 0.2254,
+      "recall_at_0.5": 0.2961,
+      "f1_at_0.5": 0.2559,
+      "precision_at_top_20": 0.05,
+      "precision_at_top_50": 0.1,
+      "precision_at_top_100": 0.11,
+      "base_rate": 0.1816,
+      "n_samples": 42505,
+      "train_seconds": 1.1
+    },
+    "random_forest": {
+      "roc_auc": 0.582,
+      "average_precision": 0.2251,
+      "precision_at_0.5": 0.2287,
+      "recall_at_0.5": 0.3156,
+      "f1_at_0.5": 0.2652,
+      "precision_at_top_20": 0.2,
+      "precision_at_top_50": 0.36,
+      "precision_at_top_100": 0.28,
+      "base_rate": 0.1816,
+      "n_samples": 42505,
+      "train_seconds": 19.5
+    },
+    "xgboost": {
+      "roc_auc": 0.5649,
+      "average_precision": 0.2167,
+      "precision_at_0.5": 0.224,
+      "recall_at_0.5": 0.2901,
+      "f1_at_0.5": 0.2528,
+      "precision_at_top_20": 0.3,
+      "precision_at_top_50": 0.26,
+      "precision_at_top_100": 0.29,
+      "base_rate": 0.1816,
+      "n_samples": 42505,
+      "train_seconds": 4.4
+    },
+    "lightgbm": {
+      "roc_auc": 0.569,
+      "average_precision": 0.2193,
+      "precision_at_0.5": 0.2296,
+      "recall_at_0.5": 0.2959,
+      "f1_at_0.5": 0.2586,
+      "precision_at_top_20": 0.35,
+      "precision_at_top_50": 0.36,
+      "precision_at_top_100": 0.38,
+      "base_rate": 0.1816,
+      "n_samples": 42505,
+      "train_seconds": 1.8
+    },
+    "catboost": {
+      "roc_auc": 0.5724,
+      "average_precision": 0.2186,
+      "precision_at_0.5": 0.2214,
+      "recall_at_0.5": 0.2904,
+      "f1_at_0.5": 0.2512,
+      "precision_at_top_20": 0.35,
+      "precision_at_top_50": 0.32,
+      "precision_at_top_100": 0.39,
+      "base_rate": 0.1816,
+      "n_samples": 42505,
+      "train_seconds": 21.9
+    }
+  }
+}

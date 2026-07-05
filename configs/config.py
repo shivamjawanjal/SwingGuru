@@ -371,8 +371,8 @@ SHAP_REPORT_DIR.mkdir(parents=True, exist_ok=True)
 # Paste your token and chat ID here once generated.
 # If these are blank, the alert system will skip sending.
 import os
-TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN", "8822345165:AAEYqJWXRg2m1pd1uA3XntJQXja50CVbw10")
-TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID", "5188672620")
+TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN") or "8822345165:AAEYqJWXRg2m1pd1uA3XntJQXja50CVbw10"
+TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID") or "5188672620"
 
 
 # ---------------------------------------------------------------------------

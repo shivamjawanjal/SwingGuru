@@ -1,5 +1,5 @@
 {
-  "cash": 2188.264042157767,
+  "cash": 99723.73803519516,
   "open_positions": {
     "ZEEL": {
       "symbol": "ZEEL",
@@ -21,17 +21,6 @@
       "stop_price": 67.0120264657164,
       "target_price": 81.89640197753907,
       "atr_pct": 5.814305124892567,
-      "cap_bucket": "NIFTYSMALLCAP250"
-    },
-    "TEJASNET": {
-      "symbol": "TEJASNET",
-      "entry_date": "2026-07-06",
-      "entry_price": 594.7000122070312,
-      "shares": 181.0694379993272,
-      "notional": 107681.99698852017,
-      "stop_price": 539.4725806178463,
-      "target_price": 642.2760131835938,
-      "atr_pct": 4.64330170300709,
       "cap_bucket": "NIFTYSMALLCAP250"
     },
     "FINCABLES": {
@@ -163,5 +152,21 @@
       "cap_bucket": "UNKNOWN"
     }
   ],
-  "closed_trades": []
+  "closed_trades": [
+    {
+      "symbol": "TEJASNET",
+      "entry_date": "2026-07-06",
+      "entry_price": 594.7000122070312,
+      "exit_date": "2026-07-08",
+      "exit_price": 539.4725806178463,
+      "shares": 181.0694379993272,
+      "notional_entry": 107681.99698852017,
+      "notional_exit": 97535.47399303739,
+      "net_pnl": -10146.522995482781,
+      "net_return_pct": -9.422673500905159,
+      "exit_reason": "initial_atr_stop",
+      "holding_days": 3,
+      "cap_bucket": "NIFTYSMALLCAP250"
+    }
+  ]
 }

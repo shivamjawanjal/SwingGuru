@@ -1,5 +1,5 @@
 {
-  "cash": 99723.73803519516,
+  "cash": 199453.34440057282,
   "open_positions": {
     "ZEEL": {
       "symbol": "ZEEL",
@@ -32,17 +32,6 @@
       "stop_price": 1000.1700570576861,
       "target_price": 1189.404052734375,
       "atr_pct": 4.591391414085996,
-      "cap_bucket": "NIFTYSMALLCAP250"
-    },
-    "KIRLOSENG": {
-      "symbol": "KIRLOSENG",
-      "entry_date": "2026-07-06",
-      "entry_price": 2294.0,
-      "shares": 40.31427617279906,
-      "notional": 92480.94954040105,
-      "stop_price": 2045.9489136519032,
-      "target_price": 2477.52,
-      "atr_pct": 5.4065188829140505,
       "cap_bucket": "NIFTYSMALLCAP250"
     },
     "NETWEB": {
@@ -166,6 +155,21 @@
       "net_return_pct": -9.422673500905159,
       "exit_reason": "initial_atr_stop",
       "holding_days": 3,
+      "cap_bucket": "NIFTYSMALLCAP250"
+    },
+    {
+      "symbol": "KIRLOSENG",
+      "entry_date": "2026-07-06",
+      "entry_price": 2294.0,
+      "exit_date": "2026-07-10",
+      "exit_price": 2477.52,
+      "shares": 40.31427617279906,
+      "notional_entry": 92480.94954040105,
+      "notional_exit": 99729.60636537768,
+      "net_pnl": 7248.656824976628,
+      "net_return_pct": 7.837999999999992,
+      "exit_reason": "profit_target",
+      "holding_days": 5,
       "cap_bucket": "NIFTYSMALLCAP250"
     }
   ]

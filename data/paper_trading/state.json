@@ -1,5 +1,5 @@
 {
-  "cash": 199453.34440057282,
+  "cash": 423438.7635799983,
   "open_positions": {
     "ZEEL": {
       "symbol": "ZEEL",
@@ -55,28 +55,6 @@
       "target_price": 15270.12,
       "atr_pct": 5.461964498901254,
       "cap_bucket": "NIFTYMIDCAP150"
-    },
-    "OLECTRA": {
-      "symbol": "OLECTRA",
-      "entry_date": "2026-07-06",
-      "entry_price": 1498.9000244140625,
-      "shares": 79.24946092515299,
-      "notional": 118787.01891551311,
-      "stop_price": 1372.7162007859815,
-      "target_price": 1618.8120263671876,
-      "atr_pct": 4.209214142798072,
-      "cap_bucket": "NIFTYSMALLCAP250"
-    },
-    "CARTRADE": {
-      "symbol": "CARTRADE",
-      "entry_date": "2026-07-06",
-      "entry_price": 2705.0,
-      "shares": 39.54777952932192,
-      "notional": 106976.74362681579,
-      "stop_price": 2452.141303025984,
-      "target_price": 2921.4,
-      "atr_pct": 4.673913067911572,
-      "cap_bucket": "NIFTYSMALLCAP250"
     },
     "NIACL": {
       "symbol": "NIACL",
@@ -170,6 +148,36 @@
       "net_return_pct": 7.837999999999992,
       "exit_reason": "profit_target",
       "holding_days": 5,
+      "cap_bucket": "NIFTYSMALLCAP250"
+    },
+    {
+      "symbol": "OLECTRA",
+      "entry_date": "2026-07-06",
+      "entry_price": 1498.9000244140625,
+      "exit_date": "2026-07-14",
+      "exit_price": 1372.7162007859815,
+      "shares": 79.24946092515299,
+      "notional_entry": 118787.01891551311,
+      "notional_exit": 108623.83838713984,
+      "net_pnl": -10163.180528373268,
+      "net_return_pct": -8.55580064316775,
+      "exit_reason": "initial_atr_stop",
+      "holding_days": 7,
+      "cap_bucket": "NIFTYSMALLCAP250"
+    },
+    {
+      "symbol": "CARTRADE",
+      "entry_date": "2026-07-06",
+      "entry_price": 2705.0,
+      "exit_date": "2026-07-14",
+      "exit_price": 2921.4,
+      "shares": 39.54777952932192,
+      "notional_entry": 106976.74362681579,
+      "notional_exit": 115361.58079228563,
+      "net_pnl": 8384.837165469842,
+      "net_return_pct": 7.838000000000019,
+      "exit_reason": "profit_target",
+      "holding_days": 7,
       "cap_bucket": "NIFTYSMALLCAP250"
     }
   ]

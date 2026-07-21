@@ -1,5 +1,5 @@
 {
-  "cash": 423438.7635799983,
+  "cash": 522189.8644640012,
   "open_positions": {
     "ZEEL": {
       "symbol": "ZEEL",
@@ -21,17 +21,6 @@
       "stop_price": 67.0120264657164,
       "target_price": 81.89640197753907,
       "atr_pct": 5.814305124892567,
-      "cap_bucket": "NIFTYSMALLCAP250"
-    },
-    "FINCABLES": {
-      "symbol": "FINCABLES",
-      "entry_date": "2026-07-06",
-      "entry_price": 1101.300048828125,
-      "shares": 98.88263436923447,
-      "notional": 108899.45005909156,
-      "stop_price": 1000.1700570576861,
-      "target_price": 1189.404052734375,
-      "atr_pct": 4.591391414085996,
       "cap_bucket": "NIFTYSMALLCAP250"
     },
     "NETWEB": {
@@ -178,6 +167,21 @@
       "net_return_pct": 7.838000000000019,
       "exit_reason": "profit_target",
       "holding_days": 7,
+      "cap_bucket": "NIFTYSMALLCAP250"
+    },
+    {
+      "symbol": "FINCABLES",
+      "entry_date": "2026-07-06",
+      "entry_price": 1101.300048828125,
+      "exit_date": "2026-07-21",
+      "exit_price": 1000.1700570576861,
+      "shares": 98.88263436923447,
+      "notional_entry": 108899.45005909156,
+      "notional_exit": 98751.10088400292,
+      "net_pnl": -10148.349175088631,
+      "net_return_pct": -9.319008653929735,
+      "exit_reason": "initial_atr_stop",
+      "holding_days": 12,
       "cap_bucket": "NIFTYSMALLCAP250"
     }
   ]

@@ -1,62 +1,6 @@
 {
-  "cash": 522189.8644640012,
-  "open_positions": {
-    "ZEEL": {
-      "symbol": "ZEEL",
-      "entry_date": "2026-07-06",
-      "entry_price": 105.37000274658205,
-      "shares": 873.6790523659257,
-      "notional": 92059.56414742878,
-      "stop_price": 93.92415203868197,
-      "target_price": 113.79960296630861,
-      "atr_pct": 5.431266209334588,
-      "cap_bucket": "NIFTYSMALLCAP250"
-    },
-    "IFCI": {
-      "symbol": "IFCI",
-      "entry_date": "2026-07-06",
-      "entry_price": 75.83000183105469,
-      "shares": 1134.0471690710342,
-      "notional": 85994.79890715891,
-      "stop_price": 67.0120264657164,
-      "target_price": 81.89640197753907,
-      "atr_pct": 5.814305124892567,
-      "cap_bucket": "NIFTYSMALLCAP250"
-    },
-    "NETWEB": {
-      "symbol": "NETWEB",
-      "entry_date": "2026-07-06",
-      "entry_price": 4424.89990234375,
-      "shares": 21.342502329033888,
-      "notional": 94438.43647151331,
-      "stop_price": 3956.3512829817078,
-      "target_price": 4778.891894531251,
-      "atr_pct": 5.294454447589474,
-      "cap_bucket": "NIFTYSMALLCAP250"
-    },
-    "APARINDS": {
-      "symbol": "APARINDS",
-      "entry_date": "2026-07-06",
-      "entry_price": 14139.0,
-      "shares": 6.474443373670143,
-      "notional": 91542.15486032215,
-      "stop_price": 12594.465679000705,
-      "target_price": 15270.12,
-      "atr_pct": 5.461964498901254,
-      "cap_bucket": "NIFTYMIDCAP150"
-    },
-    "NIACL": {
-      "symbol": "NIACL",
-      "entry_date": "2026-07-06",
-      "entry_price": 187.0,
-      "shares": 521.1558639089617,
-      "notional": 97456.14655097584,
-      "stop_price": 167.81188240885484,
-      "target_price": 201.96,
-      "atr_pct": 5.130512724905125,
-      "cap_bucket": "NIFTYMIDCAP150"
-    }
-  },
+  "cash": 962073.807730998,
+  "open_positions": {},
   "pending_entries": [
     {
       "symbol": "GVT&D",
@@ -183,6 +127,81 @@
       "exit_reason": "initial_atr_stop",
       "holding_days": 12,
       "cap_bucket": "NIFTYSMALLCAP250"
+    },
+    {
+      "symbol": "ZEEL",
+      "entry_date": "2026-07-06",
+      "entry_price": 105.37000274658205,
+      "exit_date": "2026-07-24",
+      "exit_price": 105.45999908447266,
+      "shares": 873.6790523659257,
+      "notional_entry": 92059.56414742878,
+      "notional_exit": 91999.98477453951,
+      "net_pnl": -59.579372889274964,
+      "net_return_pct": -0.06471828694937289,
+      "exit_reason": "timeout",
+      "holding_days": 15,
+      "cap_bucket": "NIFTYSMALLCAP250"
+    },
+    {
+      "symbol": "IFCI",
+      "entry_date": "2026-07-06",
+      "entry_price": 75.83000183105469,
+      "exit_date": "2026-07-24",
+      "exit_price": 70.12000274658203,
+      "shares": 1134.0471690710342,
+      "notional_entry": 85994.79890715891,
+      "notional_exit": 79400.11152409947,
+      "net_pnl": -6594.687383059441,
+      "net_return_pct": -7.668704929677375,
+      "exit_reason": "timeout",
+      "holding_days": 15,
+      "cap_bucket": "NIFTYSMALLCAP250"
+    },
+    {
+      "symbol": "NETWEB",
+      "entry_date": "2026-07-06",
+      "entry_price": 4424.89990234375,
+      "exit_date": "2026-07-24",
+      "exit_price": 4156.0,
+      "shares": 21.342502329033888,
+      "notional_entry": 94438.43647151331,
+      "notional_exit": 88566.39051994563,
+      "net_pnl": -5872.045951567678,
+      "net_return_pct": -6.217855960945456,
+      "exit_reason": "timeout",
+      "holding_days": 15,
+      "cap_bucket": "NIFTYSMALLCAP250"
+    },
+    {
+      "symbol": "APARINDS",
+      "entry_date": "2026-07-06",
+      "entry_price": 14139.0,
+      "exit_date": "2026-07-24",
+      "exit_price": 13889.0,
+      "shares": 6.474443373670143,
+      "notional_entry": 91542.15486032215,
+      "notional_exit": 89788.65870087927,
+      "net_pnl": -1753.496159442875,
+      "net_return_pct": -1.9155067543673336,
+      "exit_reason": "timeout",
+      "holding_days": 15,
+      "cap_bucket": "NIFTYMIDCAP150"
+    },
+    {
+      "symbol": "NIACL",
+      "entry_date": "2026-07-06",
+      "entry_price": 187.0,
+      "exit_date": "2026-07-24",
+      "exit_price": 173.1999969482422,
+      "shares": 521.1558639089617,
+      "notional_entry": 97456.14655097584,
+      "notional_exit": 90128.79774753281,
+      "net_pnl": -7327.348803443034,
+      "net_return_pct": -7.518611255176562,
+      "exit_reason": "timeout",
+      "holding_days": 15,
+      "cap_bucket": "NIFTYMIDCAP150"
     }
   ]
 }

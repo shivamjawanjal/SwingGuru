@@ -1,57 +1,7 @@
 {
   "cash": 962073.807730998,
   "open_positions": {},
-  "pending_entries": [
-    {
-      "symbol": "GVT&D",
-      "signal_date": "2026-07-03",
-      "probability": 0.7664726300638482,
-      "atr_pct": 6.04191092521969,
-      "cap_bucket": "NIFTY200"
-    },
-    {
-      "symbol": "OLAELEC",
-      "signal_date": "2026-07-03",
-      "probability": 0.758596866739573,
-      "atr_pct": 5.285259696948406,
-      "cap_bucket": "NIFTYSMALLCAP250"
-    },
-    {
-      "symbol": "RPOWER",
-      "signal_date": "2026-07-03",
-      "probability": 0.7118854478244505,
-      "atr_pct": 5.101266496809003,
-      "cap_bucket": "NIFTYSMALLCAP250"
-    },
-    {
-      "symbol": "AEGISVOPAK",
-      "signal_date": "2026-07-03",
-      "probability": 0.7109599538647766,
-      "atr_pct": 4.156488283521172,
-      "cap_bucket": "NIFTYSMALLCAP250"
-    },
-    {
-      "symbol": "TARIL",
-      "signal_date": "2026-07-03",
-      "probability": 0.6997747047344068,
-      "atr_pct": 4.618766026993501,
-      "cap_bucket": "NIFTYSMALLCAP250"
-    },
-    {
-      "symbol": "ENRIN",
-      "signal_date": "2026-07-03",
-      "probability": 0.6996073322574999,
-      "atr_pct": 4.803735762667113,
-      "cap_bucket": "NIFTY100"
-    },
-    {
-      "symbol": "GALLANTT",
-      "signal_date": "2026-07-03",
-      "probability": 0.5955941712416158,
-      "atr_pct": 4.111437249718029,
-      "cap_bucket": "UNKNOWN"
-    }
-  ],
+  "pending_entries": [],
   "closed_trades": [
     {
       "symbol": "TEJASNET",
